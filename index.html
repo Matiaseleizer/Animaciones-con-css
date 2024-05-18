@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/05c830f6a9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <main id="servicio">
+            <h1>Servicios</h1>
+            <div class="galeria">
+                <div class="imagenes">
+                    <img id="ca1" class="ca" src="assets/img/cambioaceite.jpg" alt="cambio de aceite">
+                    <img id="ca2" class="ca" src="assets/img/frenos.jpg" alt="cambio de aceite">
+                    <img id="ca3" class="ca" src="assets/img/neumaticos.jpg" alt="cambio de aceite">
+                    <img id="ca4" class="ca" src="assets/img/bujias.jpg" alt="cambio de aceite">
+                </div>
+            </div>
+            <ol>
+                <li>Lubricación</li>
+                <li>Frenos</li>
+                <li>Neumaticos</li>
+                <li>Bujias</li>
+            </ol>
+            <section id="contacto" class="contacto">
+                <h2>Presupuesto para ti:</h2>
+                <form action="/my-handling-form-page" method="post">
+                    <ul class="formulario">
+                      <li class="elemento">
+                        <label for="name">Nombre:</label>
+                        <input autocomplete="name" type="text" id="name" name="user_name" />
+                      </li>
+                      <li class="elemento">
+                        <label for="name">Numero de teléfono:</label>
+                        <input autocomplete="cc-number" type="number" id="phone_number" name="phone_number" />
+                      </li>
+                      <li class="elemento">
+                        <label for="mail">Correo electrónico:</label>
+                        <input autocomplete="email" type="email" id="mail" name="user_mail" />
+                      </li>
+                      <li class="elemento">
+                        <label for="msg">Marca, modelo y año de tu vehiculo:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                      <li class="elemento">
+                        <label for="msg">Servicio(s) que necesitas:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                    </ul>
+                  </form>
+                  <button class="btn" type="button">Solicitar</button>
+                  
+            </section>
+            <section id="horario" class="horario">
+                <h2>Horarios de atención</h2>
+                <ul>
+                    <li>Lunes a Jueves: 8:00 am a 18:00 pm</li>
+                    <li>Viernes: 8:00 am a 16:00 pm</li>
+                    <li>Sabado y Domingo: Cerrado</li>
+                </ul>
+                <h2 class="ubi">Ubicación</h2>
+                <div class="ubicacion">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6616.465153469478!2d-71.34107041876085!3d-33.9865593963543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1716062894563!5m2!1ses!2scl" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+        <menu>
+            <img class="logo" src="assets/img/android-chrome-512x512.png" alt="logo">
+            <div class="opciones-menu">
+                <p class="btn1"><a href="#servicio">Servicios</a></p>
+                <p class="btn1"><a href="#contacto">Presupuesto</a></p>
+                <p class="btn1"><a href="#horario">Horarios</a></p>
+            </div>
+        </menu>
+        <footer>
+          <p class="foot">Matias Altamirano/LubriPlus+ 2024</p>
+          <div class="rs">
+            <a href="https://www.instagram.com/lubri_plus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"> lubri_plus</i></a>
+            <a href="https://web.facebook.com/profile.php?id=61550630880240&locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"> Lubri Plus</i></a>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>
