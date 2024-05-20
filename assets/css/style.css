@@ -371,3 +371,19 @@ footer{
         gap: 2em;
     }
 }
+
+@media (min-width: 1024px){
+    main{
+        width: 90vw;
+    }
+}
+
+@media (min-width: 375px){
+    ol{
+        gap: 90px;
+    }
+
+    ul li{
+        text-align: center;
+    }
+}
