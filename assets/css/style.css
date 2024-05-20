@@ -220,6 +220,7 @@ a{
 
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #16BAC5;
@@ -229,15 +230,144 @@ footer{
 .foot{
     font-family:"Pixelify Sans", sans-serif;
     text-align: center;
+    margin-bottom: 0%;
 }
 .rs{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-left: 1rem;
-    height:5em;
+    height:2em;
+    gap: 2em;
 }
 .rs a{
     color: #EFE9F4;
+    font-size: small;
 }
 
+@media (min-width:768px) {
+    body{
+        width: 100%;
+    }
+
+    main{
+        width: 89.6vw;
+    }
+
+    .contenedor{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "menu main"
+        "menu main"
+        "footer footer"
+        ;
+    }
+
+    menu{
+        flex-direction: column;
+        width: 9em;
+        min-height: 100%;
+    }
+
+    .logo{
+        padding-top: 1rem;
+    }
+
+
+    .opciones-menu{
+        padding-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        flex-wrap: wrap;
+        font-size: medium;
+        gap: 1rem;
+    }
+
+    .imagenes{
+        flex-wrap: nowrap;
+        gap: 6em;
+    }
+
+    .galeria{
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        height: 16em;
+        align-items: center;
+    }
+
+    .ca{
+        height: 12em;
+        width: 12em;
+    }
+
+    #ca1:hover{
+        transform: scale(1.6);
+        translate: 0;
+    }
+    #ca2:hover{
+        transform: scale(1.6);
+        translate: 0;
+    }
+    #ca3:hover{
+        transform: scale(1.6);
+        translate: 0;
+    }
+    #ca4:hover{
+        transform: scale(1.6);
+        translate: 0;
+    }
+    
+
+    ol{
+        gap: 13em;
+    }
+    li{
+        font-size: x-large;
+    }
+
+    .contacto{
+        padding-top: 1em;
+    }
+
+    .formulario{
+        row-gap: 5rem;
+    }
+
+    #name{
+        width: 80%;
+    }
+    #msg{
+        width: 80%;
+    }
+    #phone_number{
+        width: 80%;
+    }
+    #mail{
+        width: 80%;
+    }
+
+    #horario{
+        padding: 0%;
+    }
+
+    .horario ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    ul li{
+        width: 60%;
+        text-align: center;
+    }
+
+    footer{
+        justify-content: space-around;
+    }
+
+    .rs{
+        gap: 2em;
+    }
+}
